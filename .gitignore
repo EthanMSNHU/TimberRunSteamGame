@@ -1,13 +1,8 @@
-# Unreal Engine generated folders
-Binaries/
-DerivedDataCache/
-Intermediate/
-Saved/
-
-# Visual Studio / Rider / VS Code
+# Visual Studio / IDE files
 .vs/
 .vscode/
 .idea/
+.vsconfig
 *.VC.db
 *.VC.opendb
 *.sln
@@ -19,8 +14,52 @@ Saved/
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
+*.xcodeproj
+*.xcworkspace
 
-# Build outputs and logs
+# Compiled object / library / executable files
+*.slo
+*.lo
+*.o
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.mod
+*.lai
+*.la
+*.a
+*.lib
+*.exe
+*.out
+*.app
+*.ipa
+
+# Unreal Engine generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Build outputs
+Build/*
+!Build/*/
+Build/*/**
+!Build/*/PakBlacklist*.txt
+!Build/**/*.ico
+
+# Unreal generated data
+*_BuiltData.uasset
+
+# Source art
+SourceArt/**/*.png
+SourceArt/**/*.tga
+
+# Logs and temp files
 *.log
 *.tmp
 *.cache
